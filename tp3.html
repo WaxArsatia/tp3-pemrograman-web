@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- # title untuk title page -->
+    <title>TP3 | Profile Diri</title>
+    <!-- # style untuk styling css pada dokumen html -->
+    <style>
+      /* # body untuk styling tag body */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      /* # table untuk styling tag table */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      /* # th,td untuk styling tag th dan juga td */
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      /* # th untuk styling tag th */
+      th {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- # div untuk Mengelompokkan Header Section -->
+    <div>
+      <!-- # h1 sebagai text header utama atau judul web -->
+      <h1>Profil Diri Saya</h1>
+      <!-- # img untuk menampilkan gambar -->
+      <img
+        src="https://i.ibb.co.com/KjQ8tmKS/P-20250808-152115.png"
+        alt="Foto Profil"
+        width="200"
+      />
+      <!-- # h2 sebagai text header kedua agar bold -->
+      <h2>Denis Arsyatya</h2>
+      <!-- # p untuk paragraf text biasa -->
+      <p>Mahasiswa Teknologi Informasi</p>
+    </div>
+
+    <!-- # br untuk membuat baris baru -->
+    <br />
+
+    <!-- # div untuk Mengelompokkan Table Section - Informasi Pribadi -->
+    <div>
+      <!-- # h3 untuk header dengan ukuran ketiga agar bold -->
+      <h3>Informasi Pribadi</h3>
+      <!-- # table untuk parent table -->
+      <table>
+        <!-- # tr untuk table row -->
+        <tr>
+          <!-- # th untuk table header -->
+          <th>Kategori</th>
+          <th>Informasi</th>
+        </tr>
+        <tr>
+          <!-- # td untuk table data -->
+          <td>Nama Lengkap</td>
+          <td>Denis Arsyatya</td>
+        </tr>
+        <tr>
+          <td>NIM</td>
+          <td>103032330107</td>
+        </tr>
+        <tr>
+          <td>Jurusan</td>
+          <td>Teknologi Informasi</td>
+        </tr>
+        <tr>
+          <td>Semester</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>waxarsatia@student.telkomuniversity.ac.id</td>
+        </tr>
+        <tr>
+          <td>Hobi</td>
+          <td>Programming, Gaming, Membaca</td>
+        </tr>
+      </table>
+    </div>
+
+    <br />
+
+    <!-- # div untuk Mengelompokkan Video Section -->
+    <div>
+      <h3>Video Perkenalan</h3>
+      <!-- # video untuk menampilkan video -->
+      <video width="400" controls>
+        <!-- # source untuk menentukan sumber video -->
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        <!-- # alternate text jika browser tidak mendukung video -->
+        Browser Anda tidak mendukung tag video.
+      </video>
+      <p>Video perkenalan singkat (sample video)</p>
+    </div>
+
+    <br />
+
+    <!-- # div untuk Mengelompokkan Social Links -->
+    <div>
+      <h3>Temukan Saya Di:</h3>
+      <!-- # a untuk anchor mengarah ke web lain dengan behavior membuka page baru -->
+      <a href="https://github.com/WaxArsatia" target="_blank">GitHub</a>
+      |
+      <a href="https://linkedin.com/in/denis-arsyatya" target="_blank"
+        >LinkedIn</a
+      >
+      |
+      <a href="https://instagram.com/waxarsatia_" target="_blank">Instagram</a>
+      |
+      <!-- # a untuk mengirimkan email ke tujuan yang ditentukan -->
+      <a href="mailto:waxarsatia@student.telkomuniversity.ac.id">Email</a>
+    </div>
+
+    <br />
+
+    <!-- # div untuk Mengelompokkan Form Section -->
+    <div>
+      <h3>Hubungi Saya</h3>
+      <!-- # form untuk membungkus dan membuat form -->
+      <form action="#" method="post">
+        <!-- # label untuk menampilkan text pengisian form -->
+        <label for="nama">Nama Lengkap:</label><br />
+        <!-- # input untuk meminta input dari pengguna -->
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Masukkan nama Anda"
+          required
+        />
+        <br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email@example.com"
+          required
+        />
+        <br /><br />
+
+        <label for="subjek">Subjek:</label><br />
+        <input
+          type="text"
+          id="subjek"
+          name="subjek"
+          placeholder="Subjek pesan"
+        />
+        <br /><br />
+
+        <label for="pesan">Pesan:</label><br />
+        <!-- # textarea untuk meminta input berjenis text panjang -->
+        <textarea
+          id="pesan"
+          name="pesan"
+          rows="5"
+          cols="50"
+          placeholder="Tulis pesan Anda di sini..."
+          required
+        ></textarea>
+        <br /><br />
+
+        <!-- # button untuk membuat tombol -->
+        <button type="submit">Kirim Pesan</button>
+        <button type="reset">Reset Form</button>
+      </form>
+    </div>
+
+    <br />
+
+    <!-- # div untuk Mengelompokkan Footer -->
+    <div>
+      <!-- # hr untuk membuat baris -->
+      <hr />
+      <p>
+        <!-- # strong untuk membuat text menjadi bold -->
+        <strong>
+          &copy; 2025 Denis Arsyatya. Dibuat untuk Tugas Praktikum Pemrograman
+          Web.
+        </strong>
+      </p>
+      <p><a href="#top">Kembali ke Atas</a></p>
+    </div>
+  </body>
+</html>
